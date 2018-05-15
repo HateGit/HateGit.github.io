@@ -1149,7 +1149,6 @@ body {
 {
     height: 25%;
     padding-left: 95px;
-    white-space: pre-line;
 }
 .article-sidebar__top
 {
@@ -1161,11 +1160,11 @@ body {
 }
 /*подзаголовки блоков сайдбара*/
 .article-sidebar__title
-{
+{   
+    white-space: pre-line;
     font-size: 16px;
     font-weight: 500;
     line-height: 29px;
-    white-space: pre-line;
 }
 /*Стили подчеркивания. Две реализации, потому что изначально ширина посредством бордера не соответствовала макету*/
 .article-sidebar__title--border
