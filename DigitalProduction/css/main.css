@@ -564,13 +564,10 @@ body {
     height: 100%;
     padding: 5px 0;
     content: attr(data-text);
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
     text-align: center;
-    opacity: 0;
-    color: #00d4ca;
+    
 }
-.more span
+.more a
 {
     font-size: 14px;
     font-weight: 800;
@@ -578,23 +575,27 @@ body {
     width: 30%;
     padding: 5px 60px;
     white-space: nowrap;
+    color: #00d4ca;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
 }
 .more:after,
-.more span
+.more a
 {
     transition: all .45s cubic-bezier(.83, .01, .29, .99);
 }
-.more:hover span
+.more:hover a
+{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}
+.more:hover:after
 {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     opacity: 0;
-}
-.more:hover:after
-{
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    opacity: 1;
 }
 /*
 ====================================
