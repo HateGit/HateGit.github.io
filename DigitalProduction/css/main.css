@@ -565,7 +565,6 @@ body {
     padding: 5px 0;
     content: attr(data-text);
     text-align: center;
-    
 }
 .more a
 {
@@ -577,8 +576,7 @@ body {
     white-space: nowrap;
     color: #00d4ca;
     opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    transform: translateY(100%);
 }
 .more:after,
 .more a
