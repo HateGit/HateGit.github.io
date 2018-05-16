@@ -566,34 +566,32 @@ body {
     content: attr(data-text);
     text-align: center;
 }
-.more a
+.more a 
 {
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 25px;
     width: 30%;
     padding: 5px 60px;
     white-space: nowrap;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 25px;
     color: #00d4ca;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(100%); 
 }
 .more:after,
 .more a
 {
     transition: all .45s cubic-bezier(.83, .01, .29, .99);
 }
-.more:hover a
+.more:hover a 
 {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
     opacity: 1;
+    transform: translateY(0); 
 }
-.more:hover:after
+.more:hover:after 
 {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
     opacity: 0;
+    transform: translateY(-100%); 
 }
 /*
 ====================================
