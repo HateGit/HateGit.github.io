@@ -438,7 +438,7 @@ body {
 /* переназначение некоторых свойств от пост-карт */
 .posts-article .posts-cart
 {
-    max-width: 100%;
+    width: 100%;
     padding: 61px 52px 25px 40px;
     align-items: center;
 }
