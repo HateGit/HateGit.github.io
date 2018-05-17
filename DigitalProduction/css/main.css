@@ -508,12 +508,11 @@ body {
 /* Крохотный подвальчик */
 .footer
 {
-    display: flex;
+    max-width: 1920px;
     width: 100%;
-    max-width: 1900px;
     padding-top: 56px;
     padding-bottom: 124px;
-    justify-content: center;
+    text-align: center;
 }
 @media only screen and (max-width: 950px)
 {
@@ -522,11 +521,6 @@ body {
         padding-top: 0;
         padding-bottom: 50px;
     }
-}
-.footer .container
-{
-    display: flex;
-    justify-content: center;
 }
 /*  подгрузка контента */
 .more
