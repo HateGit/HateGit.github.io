@@ -280,14 +280,11 @@ body {
 .posts-cart
 {
     display: flex;
-    width: 100%;
-    max-width: 574px;
+    width: calc(100% / 2 - 26px);
     margin-bottom: 50px;
     padding: 43px 20px 29px;
     transition: .4s;
     background-color: #fff;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .posts-cart:hover
 {
@@ -308,7 +305,6 @@ body {
     font-weight: 500;
     line-height: 25px;
     margin-bottom: 16px;
-    white-space: pre-line;
     color: #000;
 }
 /* контейнер-список для элементов управления постом */
@@ -383,17 +379,25 @@ body {
     color: #00d3cb;
 }
 @media only screen and (max-width: 1245px)
-{
+{   
+    .main-container .container 
+    {
+        padding: 0 20px;
+    }
     .posts-cart
     {
         flex-direction: column;
-        width: 30%;
-        padding: 25px 20px 25px 40px;
+        width: calc(100% / 3 - 20px);
+        padding-left: 40px;
         justify-content: flex-end;
     }
     .posts-cart__photo
     {
         margin: 0 0 20px 0;
+    }
+    .posts-cart__photo img 
+    {
+        width: 80%;
     }
     .posts-cart__info
     {
@@ -408,29 +412,18 @@ body {
 {
     .posts-cart
     {
-        width: 48%;
+         width: calc(100% / 2 - 10px);
     }
-    .posts-cart__info-icon
+     .posts-cart__info-icon
     {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
-@media only screen and (max-width: 651px)
+@media only screen and (max-width: 620px)
 {
     .posts-cart {
         width: 100%;
-        align-items: center;
-    }
-}
-@media only screen and (max-width: 420px)
-{
-    .posts-cart
-    {
-        align-items: flex-start;
-    }
-    .posts-cart img
-    {
-        width: 30%;
+        padding-left: 20px;
     }
 }
 /*  Стили главного поста-статьи */
@@ -440,7 +433,6 @@ body {
     font-weight: 500;
     line-height: 25px;
     margin-bottom: 14px;
-    white-space: pre-line;
     color: #000;
 }
 /* переназначение некоторых свойств от пост-карт */
@@ -452,14 +444,15 @@ body {
 }
 .posts-article .posts-cart__photo
 {
-    width: 50%;
-    margin-right: 40px;
-    margin-bottom: 30px;
+    flex: 1;
+    margin-bottom: 32px;
+    margin-right: 0;
     padding-left: 88px;
 }
 .posts-article .posts-cart__content
 {
     flex: 1;
+    padding-left: 20px;
 }
 .posts-article .posts-cart__message
 {
@@ -472,37 +465,22 @@ body {
 }
 @media only screen and (max-width: 1245px)
 {
-    .posts-article
-    {
-        display: flex;
-        justify-content: center;
-    }
     .posts-article .posts-cart
     {
-        flex-direction: row;
-        width: 100%;
-        align-items: flex-start;
+        display: block;
     }
     .posts-article .posts-cart__photo
     {
         padding-left: 0;
     }
 }
-@media only screen and (max-width: 950px)
-{
-    .posts-article .posts-cart
-    {
-        flex-direction: column;
-    }
-}
 @media only screen and (max-width: 420px)
 {
     .posts-article .posts-cart {
-        padding-right: 20px;
+        padding: 40px 20px;
     }
-    .posts-article .posts-cart__photo img
-    {
-        width: 50%;
+    .posts-article .posts-cart__content {
+        padding: 0;
     }
 }
 /* Крохотный подвальчик */
