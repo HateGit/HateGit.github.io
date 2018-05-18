@@ -285,7 +285,6 @@ body {
     padding: 53px 20px 18px;
     transition: .4s;
     background-color: #fff;
-    align-items: flex-end;/* по макету соответствует всем отступам, но если наполнить контентом, то лучше отменить выравнивание по низу*/
 }
 .posts-cart:hover
 {
