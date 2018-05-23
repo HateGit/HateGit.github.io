@@ -46,7 +46,7 @@ td, form {
   margin: 0;
   padding: 0; }
 a, i {
-  color: #000100;
+  color: #000;
   transition: all .3s linear;
   text-decoration: none;
   outline: none;
@@ -126,7 +126,6 @@ body {
     {
         width: 100%; 
         max-width: 919px;
-        margin: 0 auto;
     }
 }
 .carts-container
