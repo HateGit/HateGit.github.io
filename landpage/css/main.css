@@ -375,13 +375,12 @@ img {
 }
 
 .agreement-label:after {
-  content: '';
+  content: '\f00c';
+  font-family: 'FontAwesome';
   position: absolute;
-  top: 2px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  background: #fff;
+  top: 0;
+  left: 2px;
+  color: #b21b20;
   display: none;
 }
 
@@ -392,11 +391,9 @@ img {
   text-decoration: underline;
 }
 
-.agreement-checkbox:checked ~ .agreement-label:before {
-  border-width: 2px 3px 0px 0;
-  height: 10px;
+.agreement-checkbox:checked ~ .agreement-label:after {
   border-color: #b21b20;
-  transform: rotate(135deg);
+  display: block;
 }
 
 .contactform-btn {
@@ -788,6 +785,24 @@ input[type=radio]:checked ~ .switch-label:after {
 
 .accordion-list__item {
   margin-bottom: 11px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-list__item:after, .accordion-list__item:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #666;
+  right: 20px;
+  top: 26px;
+  transform-origin: 89% 61%;
+  transition: .3s linear;
+}
+
+.accordion-list__item:after {
+  top: 37px;
 }
 
 .accordion-list__item.open {
@@ -796,9 +811,18 @@ input[type=radio]:checked ~ .switch-label:after {
   padding-bottom: 36px;
 }
 
+.accordion-list__item.open:after {
+  transform: rotate(45deg);
+}
+
+.accordion-list__item.open:before {
+  transform: rotate(-45deg);
+}
+
 .accordion-list__item.open .accordion-content {
+  transition: padding .3s;
+  display: block;
   max-height: 100%;
-  padding: 33px 60px 20px 58px;
 }
 
 .accordion-list__item.open .accordion-content:last-child {
@@ -809,46 +833,20 @@ input[type=radio]:checked ~ .switch-label:after {
   background: #fff;
 }
 
-.accordion-list__item.open .accordion-toggle:after {
-  transform: rotate(45deg);
-}
-
-.accordion-list__item.open .accordion-toggle:before {
-  transform: rotate(-45deg);
-}
-
 .accordion-toggle {
   padding: 18px 0 19px 18px;
   background: #f5f5f5;
-  transition: .3s;
-  overflow: hidden;
-  position: relative;
 }
 
 .accordion-toggle:last-child {
   margin-bottom: 0;
 }
 
-.accordion-toggle:after, .accordion-toggle:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  background: #666;
-  right: 10px;
-  top: 10px;
-  transform-origin: 85% 50%;
-  transition: .3s;
-}
-
-.accordion-toggle:after {
-  top: 20px;
-}
-
 .accordion-content {
+  padding: 33px 60px 20px 58px;
+  display: none;
   overflow: hidden;
   max-height: 0;
-  transition: .3s;
 }
 
 .registation {
@@ -892,7 +890,7 @@ input[type=radio]:checked ~ .switch-label:after {
   letter-spacing: -.4px;
 }
 
-.tab-menu__chapter {
+.tab-menu__chapter-caption {
   padding: 14px 19px;
   border-bottom: 1px solid #e8e8e8;
   position: relative;
@@ -903,7 +901,7 @@ input[type=radio]:checked ~ .switch-label:after {
   cursor: pointer;
 }
 
-.tab-menu__chapter:after {
+.tab-menu__chapter-caption:after {
   content: '';
   width: 8px;
   height: 8px;
@@ -912,10 +910,11 @@ input[type=radio]:checked ~ .switch-label:after {
   position: absolute;
   right: 22px;
   top: 19px;
+  transition: .3s;
   transform: rotate(45deg);
 }
 
-.tab-menu__chapter.open {
+.tab-menu__chapter.open .tab-menu__chapter-caption {
   position: relative;
   background: #b41819;
   color: #fff;
@@ -924,35 +923,32 @@ input[type=radio]:checked ~ .switch-label:after {
   letter-spacing: -.2px;
 }
 
-.tab-menu__chapter.open:after {
+.tab-menu__chapter.open .tab-menu__chapter-caption:after {
   border-color: #fff;
   transform: rotate(135deg);
 }
 
-.tab-submenu {
+.tab-menu__chapter.open .tab-submenu {
   padding: 16px 20px 21px;
-  max-height: 0;
+  max-height: 100%;
   top: 0;
   background: #fbfbfb;
+  transition: .3s;
 }
 
-.tab-submenu__category {
+.tab-menu__chapter.open .tab-submenu__category {
   cursor: pointer;
   color: #645555;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-.tab-submenu__category:last-child {
+.tab-menu__chapter.open .tab-submenu__category:last-child {
   margin-bottom: 0;
 }
 
-.tab-submenu__category.open {
+.tab-menu__chapter.open .tab-submenu__category.open {
   color: #a41616;
-}
-
-.tab-submenu.open {
-  max-height: 100%;
 }
 
 .tab-subparagraph {
@@ -974,6 +970,11 @@ input[type=radio]:checked ~ .switch-label:after {
 
 .tab-subparagraph__item.open a {
   color: #a41616;
+}
+
+.tab-submenu {
+  max-height: 0;
+  overflow: hidden;
 }
 
 .footer {
