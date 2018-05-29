@@ -15,10 +15,30 @@ $(document).ready(function() {
 
 //main FORM tabs
 
-  $('.form-tabs__nav-item').click(function() {
-  $(this).addClass('active');
-  $('.form-tabs__nav-item').not(this).removeClass('active');
-  $('.form-tabs__container').toggleClass('is-active');
+  $(function() {
+    $('.form-tabs__nav-item').click(function() {
+        $('.form-tabs__nav-item.active').removeClass('active');
+        $(this).addClass('active');
+
+        var panelToShow = $(this).attr('rel');
+
+        $('.form-tabs__container.active')
+
+  })
+
+  
+
+  
+  
+  $('.form-tabs__container.is-active').slideUp(300, function() {
+    $(this).removeClass('is-active');
+
+    $('#' +panelToShow).slideDown(300, function() {
+      $(this).addClass('is-active');
+    })
+  })
+  // $('.form-tabs__nav-item').not(this).removeClass('active');
+  // $('.form-tabs__container').toggleClass('is-active');
   // $('.form-tabs__container').not(this).removeClass('is-active');
 });
 });

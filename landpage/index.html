@@ -27,27 +27,29 @@
 					</h4>
 					<div id="tabs" class="form-tabs">
 						<ul class="form-tabs__nav">
-							<li class="form-tabs__nav-item active">Словестный (название)</li>
-							<li class="form-tabs__nav-item">Изобразительный</li>
-							<li class="form-tabs__nav-item">Комбинированный</li>
-							<li class="form-tabs__nav-item">Объемный</li>
+							<li rel="panel1" class="form-tabs__nav-item active">Словестный (название)</li>
+							<li rel="panel2" class="form-tabs__nav-item">Изобразительный</li>
+							<li rel="panel3" class="form-tabs__nav-item">Комбинированный</li>
+							<li rel="panel4" class="form-tabs__nav-item">Объемный</li>
 						</ul>
-						<div class="form-tabs__container ">
+
+
+						<div id="panel1" class="form-tabs__container active ">
 							<span class="form-tabs__content"><img src="img/FedEx.png" alt="FedEx"></span>
 							<span class="form-tabs__content"><img src="img/Gillete.png" alt="Gillete"></span>
 							<span class="form-tabs__content"><img src="img/Sony.png" alt="Sony"></span>
 						</div>
-						<div class="form-tabs__container">
+						<div id="panel2" class="form-tabs__container">
 							<div class="form-tabs__content">
 								2
 							</div>
 						</div>
-						<div class="form-tabs__container">
+						<div id="panel3" class="form-tabs__container">
 							<div class="form-tabs__content">
 								3
 							</div>
 						</div>
-						<div class="form-tabs__container">
+						<div id="panel4" class="form-tabs__container">
 							<div class="form-tabs__content">
 								4
 							</div>
@@ -229,11 +231,11 @@
 				</form>
 				<!-- PAGE NAV -->
 				<div class="page-navigation">
-					<a class="btn-prev" href="//hategit.github.io/landpage/capitalarticle.html">
+					<a class="btn-prev" href="//localhost:3000/">
 						Назад к списку
 					</a>
 					<a class="download-link" href="" download=""><img class="download-img" src="img/PDF.png" alt="pdf-document">Скачать в PDF</a>
-					<a class="color-style btn-next" href="//hategit.github.io/landpage/capitalarticle.html">
+					<a class="color-style btn-next" href="//localhost:3000/capitalarticle.html">
 						Наши услуги
 					</a>
 				</div>
