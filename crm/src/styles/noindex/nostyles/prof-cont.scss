@@ -1,0 +1,107 @@
+.form__contact {
+  position: relative;
+  margin-top: 10px;
+  & > span {
+    font-size: 13px;
+    line-height: 20px;
+    color: #7f7f7f;
+  }
+  label {
+    top: 0px;
+    right: -50px;
+    position: absolute;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #f8f9f9;
+    border-radius: 16px;
+    svg {
+      position: absolute;
+      top: 12px;
+      left: 13px;
+    }
+  }
+}
+
+.form-contact__input {
+  border: 0px;
+  height: 25px;
+  &::placeholder {
+    color: #000000;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.email-input {
+  width: 161px;
+}
+
+.phone-input {
+  width: 131px;
+}
+
+
+.form__alerts {
+  margin-top: 20px;
+  width: 440px;
+  flex-wrap: wrap;
+  & > span {
+    opacity: 0.5;
+    color: #000000;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+}
+
+
+
+
+.alerts__sittings  {
+  margin-top: -5px;
+  height: 100px;
+  margin-right: 300px;
+  & > span {
+    opacity: 0.5;
+    color: #000000;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  
+  input {
+    
+  }
+  
+  label {
+    span {
+      margin-left: 30px;
+      white-space: nowrap;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

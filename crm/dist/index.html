@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>main</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="apple-touch-icon" sizes="57x57" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="crm"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="crm"><link rel="icon" type="image/png" sizes="32x32" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-16x16.png"><link rel="shortcut icon" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1536x2008.png"><link href="styles.ced726a13b9187cf60ed.css" rel="stylesheet"></head>
+<body>
+	<main class="main flex">
+		<!-- left-bar container -->
+		<aside class="sidebar"> 
+			<a class="logo" href="/">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAwCAMAAABpN6nPAAAAAXNSR0IB2cksfwAAAQhQTFRFAAAAap//aKL/aaL/Z6L9aaL/Z6L9aKL+aKL+cJ//aJ//aKP/aKP/Z6L+aaL/aKL+aKP9aKL+Z6P/Z6L+aaP/aKH9JXr6I3j4aKL9aKL+JXj3JHf4Z6H+IID/JHf4JHj4KHj3Yp3/I3n3JHj3I3j4JHj3LX75T5L8JHj4JHj4Ln34LX35Qor7X539aKH9JXf4JHf4MYD5MH/4U5X8ZJ/+JHn3JHj5LX75KHv4NYP5Poj6Ro37SpD7V5j9KXv4L3/5JHj4Knz5LX75Ln75JXj5I3n5Jnn4LX35KHr4KHr5LH75JHn4JHj4KXr3JHj4JHj4JHj4JHf4JHj4JHj4JHj4JHn4JHj5JHj4IqvJnAAAAFh0Uk5TABhHa4M/j9//ECB/QK9wv6DAb+9QgDCQn7Bg788Qr/8gDV9A34DM/7+wcP///5Bvz//E//8/f1v////////zrMDlgs6gUPil7nnJcNCp8OD0zeHq8dzH1xYaEy8AAAGeSURBVHicndVpQ4IwGAfwdem8stKkIBw5TS0rzS6zkspOLbv7/t8kNkARNtn4v/GZ+HNuPEwAWJmbX1hkXuBmKRaHVhLiIpmiwkpalKQzcJxlQZKFnqwI/bAMnMqqgFnLQV/Cp8n6CYTJEJMPTGMlP9ukGATCdcYnC4pbbTAN3AwaVdPsIrHFNjDuJ3oRIWSQaptnAttX0iyDMCljXDPdSLiMaCpksFPlIk8j4RpyUifDXbTX2GejA3cth2U0TpO+Q6pWleVoI+mlooa8od9zZNetRvvYh3L6yWkN+UN34mwyPu9cdC+vaNrdRqcVACQqneqaeY0bun2gJ4dMu5/kkNNIN3JKp+hWDmEwvlXisXcC3Emhvo3upVDT6a4HKeWgRylUABFulepM9SSDnO0DzzLIdJAhg8ru8/wigQYuUoXJsDA5OkRvlaJ7jqhXsWmw91gDxls4GanAF2MYQt7rfkKeEGUW+fjsM4wVbHLEV/MbcQwg/z+Bpf38/pEXvqFuoJj28kxTqWB9hMJNIGYEAyoRDGkwaQNwBANA0PwDPUOnzIQDJfIAAAAASUVORK5CYII=">
+			</a>
+			<ul class="sidebar-list">
+				<li class="sidebar-list__item active">
+						<a class="sidebar-list__link" href="#">
+							<img class="sidebar-list__icon-tenders" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAMAAACrZuH4AAAAAXNSR0IB2cksfwAAAppQTFRFAAAAIHj3JXn4KHr4LX36Jnr4LH35Ln75MoD6KXr4K335MoD5NIL5OIT6QID/Pon8QI//MID3Ln75MoH6OIX6O4b6PYj7PIj7Poj6QYr7QIr6MID6NIL5OIT6Oob6QYr6RIz7OYb5QIn6Q4v7RYr6O4b6Poj7RYz7R477S5D9UI//OIf3PIf7QYr7Q4v7RY37RY/6QYn6RIz7R437SpD8TZH8UZT9O4b6R477SI/6R477S5D8UZT9VJX8V5j9YJ//OYX7QIr7Qov7RY37So/8TY/6TZH7UZT8U5X8V5f9Wpn9XJv9OIP6OYX6SY/7TJH8TZL6U5b9XZv+YJ39ZJ/+NYP5N4T6T5L8UJL8WZn8XZv9Y5/+ZqL+MYD5NYL6NoP5TpL8UpX8YJ79ZqH+aqL/LoD5TJD7UZP8U5X9VZX8aJ//aqX/J3v4KHn4LHz4LXz5MH/5TpL7Vpj9JXj6Jnn4KXv5K3z5VJX9VZb8JHj3KHv4LX34TpP8UZT8U5X8WJf/JXj3KHz3IID/Jnn4L3/5TY/6I3j4J3r4Ln/6KHv4LX35NIL6N4P6S5D8MYD5M4L5MID/K3z5T5L8Knz6LX75MYD6Oof6LX34RYz7UpT8NIH5OoX6QIj6L4D5Q4v7U5X9OIT6R4/8QIn6SY/7Vpj9PYf6TZD8Qor7TZH8VZb8RIv6VJX9UJ//NoP5VZb9V5j8Wpn9Wpr/So/8TZH7Wpn9OYT6QIn7UZP7WJj9XZv9YJr/UJX8V5j9Xpz+YJz9OoX6Vpf9V5f8XJv9X53+YJv7WJf8ZJ/+ZqP/X5z9Yp7+ZZ//XZ3/Z6L+aKf/Wpr9XJr9YZ39ZZ/8ZZ//ZqH9Xpv9aKL/X5z+ZqD+aaL+Yp7+aKL+ZJ/+Zp/8ap//dNORnwAAAN50Uk5TACDP/4+w//+fsP///58QXxAg8P///7/v/+8wMPD////PUP/vMND////PECD////vMND/////z9/vYND////PELD/////YND/////z6D///9g0P//v6D//2DA///woP///2Cg/2Cg////YEAwcL9voP//72D/////wID//6CgsCBgQBDQ/6CQ/4/Q////n/+fENCfkP//n9Dwn///n9Cwz6Cf0MDPoJ+voP9wzxCg///vMGD/z6CAkP/vMGD//88w////70Bg/1D//2Bg8CDw//9gMIDwYPD//+DgsMAw4WW+dwAAAgFJREFUeJxjYEADjEzMLOhiqICVmY2dA68KTi52bh5enNJ8/AKCQsI8IqJiAjgUiEtISknLyMpJyCtgV6IoKqGkrMKnqiavrqGphU2Fto6Erp6+gYChkbGJqRk2JXzmakp66haWAlbWpja2dvaYKhx0JBydnDVcXLXc3D08vbwxlPj4ioLM0PDzD9AK9PQKCg5BUxAa5gtyh7OGiX94hFZkVHB0DKqC2Lh4uBkJ7okMSdHJKSgKUoV5QGaA3ZEWnp6RyZCVjZDNyc3LL+AGmSEBMaPQ3aMIWXtxSWkZewHEDKg70ssrkFVUllSVVUPMgLqjprauHiHf0NjUDDSjBckdrSgubGsv62jqLOsq4O7ugZnRi6Kivayrr3/CRFR3TEJWMXnKVB7ZaROmw90xA+SXmcjRFjsrbLbEnAlzoWbME7AChcd8ZCUL5NSUjBYyxHaDwmORAIPAYlB4LEFWslQJmB6WaYHjZTlIYAUwPFbaIfmXYZUxMD2sXrMW5A6wQI27x7r1GzYiKdm0GZgetthv1ZHYBhHYnrFyh9fOXUhKdtvu8dq7z36/FEwg8cBBr0OHjyApOeoVFXzsOJJA5g6voBMnTyGJnA4+duYsckAdPXf+xIVjF5FELl3OZkABG6+cOHks+SoDHrDx2oVj12/gU8Gw62Z08i28Khjsb9+5CwBhIKYx5QjQagAAAABJRU5ErkJggg==" alt="tender">
+							Тендеры
+						</a>
+				</li>
+				<li class="sidebar-list__item">
+						<a class="sidebar-list__link" href="#">
+							<img class="sidebar-list__icon-contacts" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAAAXNSR0IB2cksfwAABN9JREFUeJy1l39M1GUcx9na2uov29r6p/qj6UKcymZWJtpZZpCYvyhWYV1aa24t6J+GBHpKAoHyQ0QUk6PatK2mOFOn5I+SikJBLbX8AUzZxYl4P+Hu++N53n2e5/u9gzvWeXD0bM8Y4757Pa/P+/N57ktSUpwLwKO0V9C2mj8fi/fZcS+CPONw8xZPAP62G7zvy58ZzvZwp5d+7/eghf4+538Bd/VjyckrzLG6UUNaqYoXyjUs2qphcbWOpbU68r9j+L2bO5xurJxQsMODnF+uM/esTSqe/UzFvFINCwj+cqUu4csInrVDx5u7GM7f5K6BQayeEDCVMvlSL++dsV7BrI2KhEebC/hrOxje2Knj7S8YrvXxf+i5GQnD7/iZ/f0mDQbcNC8zzSVcM+GGuYBvPcYx4Mc3iVrf1+/jt6d+GkQs86UhcxO+ppHh7iD66fn7E4FPdbi4N6VQMeAxMh9pvsbO4fTCR8/PTAQ++8xVFr+5mbkwv9gLJz2flgj88csO3j3K3Mx80X9k/h6Z37gN0XRPjBsuli+AW4urlTjMdZn5OwQvoJkfUtGXENi0/+Dbdt17r8yzRpi3XELQq+CThOFi3brLf121W41rzgv3MzFm7RMCFuup4oDlp6tcWfu1FnPOiw/JGw7Z9brdasekxMEbFdvTxUa5959jOHSeoeyIDuseKnWdhrVf6ag9IUrNcfxPLsufvZOJCDqtDUgdNzjVpjSJUs/eROXerGJuiYqP9mo4fIHh7z6O37o4rjkFlKGIyr3czJ7MZf45DcxFFRj7AaavV5oILnMOmc+lrOeXqbLkL1YYZc+o0pBZQx2/TceK7aIaYXOs2s1QcZT7nB7YqHHzaGfTfiQmOKUwWE1wpG4w7vOR5vMpb8vnKhZWGA2XUaXL3AV8uYBT4wnzxjNc5i/iEHHZWxkOdjK3Zwi+QQXf0yEeHAVOLgxYptGlIuE2NcI8jUYswpxGLWT+qjRnsuwHOzl2ndLlZ+fRNj6rYUmNccDq4xyuQQyMOkByQbCHzDFsbmQ+J2yuRplrw+aU+ckrnBpQp2dU+YyolICn00EFXETzOlUmhyLxB+GnAzwswVMKAtYnC4IYNo/KvCR25tup6/e16ZhJh6YpMeGjzbPrGd5qoCY9IA9wwYDnB08nFyiINI8/83M9HM8TTMJHmC/colGpmWFex8hcTgKNK6OJwR2yz0iask5xJ4fMi8aWee4+hiMXGVLoG9CAK/QZFelVKlbSfaDqkI0oSh4yf3cP9cZpDvcQ6pIm5wd7RpsrUeZm5lsiMy89zHDiMpMHD5lfpzuAyiq3WNTlaO7g4cyFeRU1ny+Is0mT1wXzYmYeY85D8LD5iMzTKw3z6MwFvPKYCReLXhzyphUG3WPNPHcvw9E/Is1DmYfgmTWaHEdpbsIbfjTLPnytYtL0ItWaukFrJvOeeOe8vVs0nBLOPGQuKtRJF060uci8rYuLhkuPees9t1lNJbjFYu6XylUrmdteqdJsmbSX1WqWs92shL77BwU8njkXo0Yl77j3ZR/ncnp4c/0pPRDPnJuXzEMTBhfr5gBrsrfqrgXlkeaZ5pxv+4GD7ngXgR+YUHBoDQzhY3oD+ov+zXIe6GBoahXvAtzjHYKfSt2c0Dt9vIsgFtof0s6lnRW+y6PWv4qa8TwqFggEAAAAAElFTkSuQmCC" alt="contacts">
+							Контакты
+						</a>
+				</li>
+				<li class="sidebar-list__item">
+						<a class="sidebar-list__link" href="#">
+							<img class="sidebar-list__icon-message" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAABHNCSVQICAgIfAhkiAAAA5tJREFUWIXtll2IVVUUx39rnXNnNCshGPoygsoixI+QyhDCBB8ylDKpNGS06KWYCEooCiqrQSSCKGQGxpzAB33ImsFplIQy6cFeLEOcB6Hpgx5q1Kb5vB97rx72ueeee9G8Tc7Yw11w2Of891p7/fePfQ4HGtGIRjSiEY1oRCNmPsxszmje9hZKNmkzGCVnheEJ6zezq8teBGBkwvYcOunWb//cNeeLECmIQKSCiBGJoAKqhFEEFUM16JGGhUJ+9XM2L70SfVYsrF6Iu2++fHHNHHkQQAFK3h7o+to3j+UNA5yBIXhvmAnewAPegzfBmyXzYAbOh3xnhlnIM8CbhXxvYY2adSdLcHiAaFbM8jIhBSg6+f7+28W8Cc6HRZ0LizhfPXp/fj2tS5/JzMsF6+66GRsatXyVoa37C1tXL4rkvccjmuPE1AyQWrMYe2ihyK6jnK4ydGTAt2zoLDA0Cp+15Zh/rU4rqVwEL6wSFtwo8vYB4/e/qCYUzpHQ3ldiR3+J7qdzbFwWTQuplquEd9YpQ6PGuweN8dRKjSEzA4QvBzwbOgo8dnfEzk05ZucuHalF84KZnuPG3mNhs8YFDIkIYIgIv56DjZ1F/hgxep5v5o7r+M+k1i8Vnlup7DhofPujhe+KJd+dfyJkZohAwUH7AccHh4vsfqqJzct1SqQiNV5fG7HsVuG1/Z6fz4Q+WHBTFyHLOD90Elp3FVm3NKJrc8zcK+on1XIlfPhkzLkx2NZrjOQrff41IatM8MtZaO0q8uc49LQ1seQmuSipxfNg56aY3uOO3d8YzhuS6TNlQiR6wQlv9Do6vnJ0tuZ4dmWE5/yknrhHeXVNTHuf4+jphIQIxsUJxVWEJBBSlSpCqS5C3wnPqd+M9kcj7r1FeGmf4+wYmDeam4S3Hom4fq7w4j7HWB5UDLRSX+6DJfpUCaU7RPjpjPHMx47hCeHTthyrFih33qB8tCXGm/DKJ56RyUz9dBKyZGayYGzrdaxdorz5cMzwOOw55u3IKS+RJm2ECok6CaWGagmV16wlpGR2CPSd8PT/4Mu/JBIlTarqDSTVawjVIKrrLUt1SAkFPR2CLpk8y9QLGf0SvWXZM1TRKzuUpEnlrNQQqvMMNQjVS2jwf0VocPvswctJyMy+qyWE9/b+ZSFkDGus3en+s7hue3liRVOsKwBiDW41SkZNLhRVj6qi5TytzcncZ/LI5id5MdrdsUUGyx7+BvPhNravm/eWAAAAAElFTkSuQmCC" alt="message">
+							Почта
+						</a>
+				</li>
+				<li class="sidebar-list__item">
+						<a class="sidebar-list__link" href="#">
+							<img class="sidebar-list__icon-analytics" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAeCAMAAADqx5XUAAAAAXNSR0IB2cksfwAAAF1QTFRFAAAAKXz5NYP6QIn6TJH8V5f8Y5//Knv5NYL5QYr7WJj9Y5/9KXv4NYP6V5j8ZJ/+Knz5NYL6TJH7Y5/+V5f8Y5/9WJj8Knv5KXv4Y5/+ZZ/+NYL5WJn9Y5/8NYL6B5r5PgAAAB90Uk5TAFDP///fUOD////P////////////////4NDQ0OBQ0BU4JaQAAACtSURBVHiclZDhDsIgDIRBKsqcbmO6TZ2+/2MaQgEbj5jxp/kSrndXpXeG9lbxk3Q4OmpOmNqzoUuHqR+cb0ZM7WDoWqE+ONww/fEj4Ucb/CoUHKYuHYRJNuKDwH4cEPZjAewn5bJRkf/2g36zEMxb/HLAsd5vynK+EuzHV4J+PGA/3gL78SgB6Stu3CIDJsp+vhwkxY1bliC4qyX8fGSKQz8drS+l386vNlMY9gP4TRjbRGc/QQAAAABJRU5ErkJggg==" alt="analytics">
+							Аналитика
+						</a>
+				</li>
+			</ul>
+			<div class="sidebar-info">
+				<a href="#">
+					<img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IB2cksfwAAAppQTFRFAAAAPIf7Poj6QYr7Q4r7RY37R437So/7TJD7TpL7T5P7NYT2N4T6O4b6PIf7P4n7QYr7Q4z7RYz7SI/8SY/7TJH8TpL8UJP8UpT7Vpb9W5L/M4P7N4L5OIX7OoX7PYf7PYj6QIn7Q4r7Ro37So77S5D7TZH8VJX8V5f9WZj9N4D/MYH6NIL5NYX7OIX6O4X5SZL/U5T8VZb8V5f8WZn9Wpr+W6T/L335L3/5MYD5NIL7NYP6Vpf9WJf8W5r9XZv9X5r/JID/Ln75L3/5MoH6NYL5WZr/W5n9Xpz+X539K3v6LX35MID5L4L5XZv9YJ39YZ7+KHr4K3z5Ln75X5z9Yp7+ZKD/I3v2Knv4K335LX76X539YZ39ZJ/+baT/JXj4KXr5K3z5Yp7+ZJ/+Z6H9J3r5KHr4LH35Yp38ZqD+I3j4J3r4M4H4PYb6SI/7UpT8XJz7ZqH+Z6P/I3j4KHv5KXz5M4H5PYj8SY36U5X+Xpv9ZKD9ZqD+aKP9JXn4J3n4NIL7aaL+I3j4J3r5K3z4UpX9aKL/ZaD/aKL+JXn5KHv7SY77UpT8Xpz9ZZ7/aKH+JHj4KHv2Poj8U5X7JXn4Jnn4Pof7aKL+I3f4JXj6Poj7SI37T5X/KXr4VJX/J3j4R477Yp3/ZqH+J3r6K3z5YJ/8Z5/9KXv5L374X5v9ZJ/+XJr/LHz6Xp3+Yp7+LX35MH/5MYD5WJr7W5r9Xp39L4D5MoH7NoT7Xpz9MYD6NYP5OIT6OYT5UZb8VJT8V5f9W5r+M4P4NoP6O4b7P4j8QYv7Qo38Q4v7SI/7SJD8TJH9TpL8VZb9V5f9WZn9OYX6OoX6Poj7Q4v7R4/7SY/8S5D7U5X7QIj7QYv7Q4v7So/7TZD8TpH7UZX7s1S3lwAAAN50Uk5TAEiPrLrl5bqsj0cdj9fl5eXl5eXl5eXl148Oc9fl5eWec0g6SHOe5ddyDrrl5cpWDlbK5eW6DivX5eVlc+Xl1ysO1+XYKyvY5de65dgr2OW6c+Xl5eVzHdflZXPl1w6Q5crK5ZDY5VZW10jlc8nlukjlSJCeguWeZa3lnuWCreWtrbvlSIJlVrrlOpDlkDrl5TpWkLvlc7utkDpyHeU62HNW2JDJyZDYc3PYOrvXu9jl1zrX2Njlcti75clVVcnlu3PY5Z1yVTk5VXKd5dhzkNjl5eXl5diQrbu7rYJI1xFhyQAAAd9JREFUeJxjYEAARiZmFlY2dg5OLgYsgJuHl49fQFBIWERUTFxCUgpdXlpGVk5eQVFJWVlFVU1cXV1DE0VaS1tHV09fC8Y1MDQyNjE1Q8ibW1haWaOaaGNrZ+8A4zg6Obu4otvp5u7hCTXD0cvbxxfT1W5+/gEQVmBQsDk2fzmEhIaB6PCIyChs8gwM0TGxcUAqPiERuzwDQ1JyCpBMTUvHpSAjOZOBISs7wREhlJObl18A55klFxYxFGeXIORLy8orKquK4PzqmlqGuvpAhIKSBgYGqaoUOD+ssJGhqbkF1eLWqjY4u72mg6EzuwtFvrunF8HpK+xnmJA9EVl+Ut5kJF5fTT/DlKkoVkzLQ04J7YXTGWY0BzLgBGE1jQwzkb3JwDBr9hwkXnVhLTCg5iIFFNCKeQiOWXINMEzmJyAH9awFSCYsTF4EJBfPXYLDBWZLk5cBKcflQSuwK1gZugoU3QyBkd5YE8xq/5gwCGtNsAW2JLc2ZB2U6bh+w0aMRLtpc9UWeMI337pNZzuqvI2J3Q4HBFdrp9Wu3XsQGWfvvv22B8xQdBw8JHuY78jRY8dPnDx1WrznzNlz6HZqnb8gf1HgEuvlK1fFxK9Nxsi8IMB4/cZNIeFbt+/cRRIEAGVPg0h8sREmAAAAAElFTkSuQmCC" alt="info" title="info">
+				</a>
+			</div>
+		</aside> 
+		<!-- left bar container END -->
+		<div class="wrapper">
+			<header class="header flex">
+				<div class="btn-circle special-style"></div>
+				<div class="flex">
+					<a href="#" class="notice btn-circle btn-gray"></a>
+					<div class="user">
+						<img class="user__mini-img" src="data:image/png;base64,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" alt="">
+						<span>Ирина Лебедева</span>
+					</div>
+					<a href="#" class="menu btn-circle btn-gray"></a>
+				</div>
+			</header>
+			<section class="my-profile">
+				<h2 class="title">Мой профиль</h2>
+				<div class="flex">
+					<div class="profile">
+					<div class="profile__user">
+						<img class="profile__user-img" src="user-img.1b21eef0e88242d1356d.png" alt="">
+						<p class="profile__user-name">Ирина Лебедева</p>
+						<span class="profile__user-post">Учредитель</span>
+					</div>
+					<ul class="profile-sections">
+						<li class="profile-sections__item "><a class="profile-sections__link  active" href="#">Профиль</a></li>
+						<li class="profile-sections__item"><a class="profile-sections__link" href="#">Организация</a></li>
+						<li class="profile-sections__item"><a class="profile-sections__link" href="#">Документы</a></li>
+						<li class="profile-sections__item"><a class="profile-sections__link" href="#">Статистика</a></li>
+					</ul>
+					</div><!--PROFILE END -->
+					<div class="content">
+						<div class="content__tabs">
+							<div  class="content__tab active">
+								<a href="#" class="content__tab-link">Личные данные</a>
+							</div>
+						</div>
+						<form class="personal" action="" method="POST">
+							<div class="personal-box">
+								<div class="personal__input-wrap">
+									<input class="input-style" type="text" name="name" placeholder="ФИО">
+								</div>
+								<div class="flex personal__input-wrap">
+									<div class="personal-date__wrap">
+										<label class="personal-date__label" for="personal-mail">E-mail:</label>
+										<input class="personal-date__input" id="personal-mail" name="personal-mail" type="email" value="IrinaLebedeva@mail.mail">
+										<input id="mail-notice" type="checkbox" name="notice" value="mail-notice-on">
+										<label for="mail-notice" class="personal-date__checkbox input-checkbox">включить уведомления</label>
+									</div>
+									<div class="personal-date__wrap">
+										<label class="personal-date__label" for="personal-tel">Телефон:</label>
+										<input id="personal-tel" class="personal-date__input" type="tel" name="personal-tel" value="+7(563) 567-55-123">
+										<input id="tel-notice" class="checkbox" type="checkbox" name="notice" value="tel-notice-on" checked>
+										<label for="tel-notice" class="personal-date__checkbox input-checkbox">включить уведомления</label>
+									</div>
+								</div>
+								<div class="personal-post__box ">
+								<div class="personal-post__wrap flex-sb">
+									<input class="input-style col-3" type="text" placeholder="Должность" name="post">
+									<input id="post-leader" type="checkbox" name="post" value="leader" checked>
+									<label class="input-checkbox" for="post-leader" >Руководитель</label>
+									<input id="post-keyowner" type="checkbox" name="post" value="key-owner">
+									<label class="input-checkbox" for="post-keyowner">Владелец ключа</label>
+									<input id="post-chief-accountant" type="checkbox" name="post" value="chief-accountant">
+									<label class="input-checkbox" for="post-chief-accountant">Главный бухгалтер</label>
+								</div>
+								<div class="personal-post__wrap">
+									<input type="text" class="input-style col-12" placeholder="Полномочия: например, ...">
+								</div>
+								<div class="personal-post__wrap">
+									<input type="text" class="input-style col-12" placeholder="ИНН:">
+								</div>
+								</div>
+							</div>
+							<div class="passport-box">
+								<h4 class="passport-title">Паспортные данные</h4>
+								<div class="input-container">
+									<input class="input-style passport-serial" type="text"  name="passport-serial" placeholder="Серия">
+									<input class="input-style passport-number" type="text"  name="passport-number" placeholder="№">
+									<input class="passport-code input-style col-3" type="text" name="code" placeholder="Код подразделения">
+								</div>
+								<div class="input-container">
+									<input class="input-style col-8" type="text" name="" placeholder="Кем выдан">
+									<input class="input-style col-3" type="text" name="when" placeholder="Когда выдан">
+								</div>
+								<div class="input-container">
+									<input class="input-style col-8" type="text" name="" placeholder="Место рождения">
+									<input class="input-style col-3" type="text" name="" placeholder="Дата рождения">
+								</div>
+								<div class="input-container">
+									<input class="input-style col-8" type="text" name="" placeholder="Место прописки">
+									<input class="input-style col-3" type="text" name="" placeholder="Дата прописки">
+								</div>
+							</div>
+							
+								<button class="btn-save special-style">Сохранить</button>
+								<button class="btn-cancel btn-gray">Отмена</button>
+				
+						</form>
+					</div>
+				</div><!--FLEX END -->
+			</section>
+		</div><!-- WRAPPER END -->
+	</main>
+<script type="text/javascript" src="main.b1be556677160b4a8007.js"></script></body>
+</html>

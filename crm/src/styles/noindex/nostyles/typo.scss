@@ -1,0 +1,137 @@
+button {
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+p {
+  color: #000000;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.18px;
+}
+
+input {
+  outline: none;
+  
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 12px;
+  width: 100%;
+}
+
+th {
+    font-weight: normal;
+  }
+
+.flx {
+  display: flex;
+}
+
+.flx_jc {
+  display: flex;
+  justify-content: center;
+}
+
+.flx_jsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flx_jsa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flx_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flx_aic {
+  display: flex;
+  align-items: center
+}
+
+.xs-s {
+  width: 158px;
+}
+
+.xs-l {
+  width: 184px;
+}
+
+.sm-s {
+  width: 201px;
+}
+
+.sm-l {
+  width: 302px;
+}
+
+.md {
+  width: 403px;
+}
+
+.lg-s {
+  width: 622px;
+}
+
+.lg-l {
+  width: 649px;
+}
+
+.input {
+  height: 49px;
+  border-radius: 4px;
+  border: 1px solid #ececec;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  text-indent: 17px;
+  &::placeholder {
+    opacity: 0.5;
+    color: #000000;
+    font-family: "Gotham Pro";
+    font-size: 12px;
+    
+  }
+}
+
+.button {
+  margin-right: 15px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 17px 36px;
+  border-radius: 4px;
+  background-color: #f8f9f9;
+  color: #6c6c6c;
+}
+
+.button_blue {
+  background-image: linear-gradient(to right, #1770f7 0%, #72a8ff 100%);
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+

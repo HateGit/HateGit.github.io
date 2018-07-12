@@ -1,0 +1,69 @@
+/* Blue gradient */
+.special-style {
+	background: linear-gradient(to right, #1770f7 0%, #72a8ff 100%);
+	color: #fff;
+	// font-size: 13px;
+}
+.input-style {
+	border: 1px solid #ececec;
+	width: 100%;
+	border-radius: 4px;
+	padding: 18px 0 14px 19px;
+	outline: none;
+	&::placeholder {
+		color: rgba(0,0,0,.5);
+		font-size: 12px;
+		line-height: 13px;
+	}
+	&.col-2 {
+		max-width: 177px;
+	}
+}
+.wrapper {
+	width: 100%;
+	padding: 40px 62px 80px 40px;
+}
+.container {
+	width: 100%;
+}
+.input-checkbox,
+.input-radio {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex: none;
+	font-size: 12px;
+	&:before {
+		content: '';
+		width: 21px;
+		height: 21px;
+		margin-right: 7px;
+		border-radius: 2px;
+		border: 1px solid #f4f4f4;
+	}
+}
+input[type=checkbox]:checked + .input-checkbox:before {
+	background: linear-gradient(to right, #1770f7 0%, #72a8ff 100%);
+}
+.input-radio {
+	color: rgba(0,0,0,.5);
+	&:before {
+		border-radius: 50%;
+	}
+	// :after
+}
+.caption {
+	font-size: 14px;
+	line-height: 12px;
+	letter-spacing: -.3px;
+	margin-bottom: 25px;
+}
+/*
+==================
+	SVG ICONS
+==================
+*/
+.cross {
+	width: 10px;
+	height: 10px;
+}

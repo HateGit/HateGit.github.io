@@ -1,0 +1,131 @@
+/* 
+======================
+ COMMON FORM STYLES
+======================
+*/
+.form {
+	max-width: 328px;
+	width: 100%;
+	margin: 0 auto;
+	&__header {
+		text-align: center;
+		letter-spacing: -.5px;
+	}
+	.input-wrap:first-child {
+		margin-bottom: 30px;
+	}
+	&__btn-group {
+		margin-bottom: 98px;
+	}
+	&__link {
+		display: block;// ?
+		line-height: 52px;
+		text-align: center;
+		font-size: 12px;
+		line-height: 13px;
+		color: rgba(#2378F8,.8);
+	}
+}
+/* SOCIAL */
+.social-list {
+	text-align: center;
+	&__item {
+		display: inline-block;
+		overflow: hidden;
+		width: 52px;
+		height: 52px;
+		margin-right: 17px;
+		background: #f9f9f9;
+		border-radius: 50%;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		display: block;
+		text-align: center;
+		height: 100%;
+	}
+	&__icon {
+		color: rgba(0,0,0,.56);
+		line-height: 52px;
+		font-size: 14px;
+	}
+}
+
+/*
+================
+FORM-Reg styles
+================
+*/
+.form-reg {
+	&__header {
+		font-family: 'Display';
+		font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.5;
+	}
+	.input-group {
+		margin-bottom: 50px;
+	}
+	.input-wrap:nth-child(2) {
+		margin-bottom: 22px;
+		position: relative;
+		.icon-eye {
+			position: absolute;
+			right: 18px;
+			top: 19px;
+			font-size: 12px;
+		}
+	}
+	&__manual {
+		margin-bottom: 26px;
+		&-item {
+			color: rgba(0,0,0,.4);
+			font-size: 12px;
+			line-height: 12px;
+			margin-bottom: 12px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			.fa-check {
+				color: rgba(0,0,0,.4);
+				font-size: 7px;
+				vertical-align: top;
+				margin-right: 7px;
+			}
+			&.stage {
+				color: #000;
+				.fa-check {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+/*
+========================
+ FORM-ENTRY STYLE
+========================
+*/
+.form-entry {
+	&__header {
+		font-family: "Gotham Pro";
+		margin-bottom: 42px;
+		line-height: 39px;
+	}
+	.input-group {
+		margin-bottom: 47px;
+	}
+	.input-wrap:nth-child(2) {
+		margin-bottom: 10px;
+	}
+	.remind-password {
+		opacity: .2;
+		color: #000;
+		text-align: right;
+		font-size: 12px;
+		font-weight: 300;
+		letter-spacing: .2px;
+	}
+}

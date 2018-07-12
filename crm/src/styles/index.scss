@@ -1,0 +1,30 @@
+/*
+=================
+  GLOBAL STYLE
+=================
+*/
+/* RESET */
+@import "lib/global/_normalize.scss";
+/* FONTS */
+@import "lib/global/_fonts.scss";
+/* BASE */
+@import "lib/global/_base.scss";
+/* BUTTONS */
+@import "lib/global/_button.scss";
+/* UNIVERSAL STYLESHEETS */
+@import "lib/global/_universal.scss";
+/* GRID LAYOUT */
+@import "lib/layout/_grid.scss";
+/*
+======================
+  FORM REGISTRATION
+======================
+*/
+@import "lib/forms/_form-reg.scss";
+/*
+======================
+  MAIN STYLESHEET
+======================
+*/
+@import "lib/main/_main.scss";
+@import "lib/forms/_portfolio-form.scss";

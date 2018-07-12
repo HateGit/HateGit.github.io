@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Registraton</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/30383c9649/UntitledProject/style.css">
+</head>
+<body>
+	<div class="account-container">
+		<form class="form form-reg" action="" method="POST">
+			<h2 class="form__header form-reg__header">Регистрация</h2>
+			<div class="input-group">
+				<div class="input-wrap">
+					<input class="input-style" type="email" name="reg-email" placeholder="E-mail" required maxlength="30">
+				</div>
+				<div class="input-wrap">
+					<input class="input-style" type="password" name="reg-password" placeholder="Пароль" required maxlength="40">
+					<span class="icon-eye"></span>
+					<!-- <i class="fas fa-"></i> -->
+				</div>
+				<div class="form-reg__manual">
+					<p class="form-reg__manual-item stage"><i class="fas fa-check"></i>Используйте буквы</p>
+					<p class="form-reg__manual-item"><i class="fas fa-check"></i>Используйте цифры</p>
+					<p class="form-reg__manual-item"><i class="fas fa-check"></i>Минимальная длина — 6 символов</p>
+				</div>
+				<div class="input-wrap">
+					<input class="input-style" type="tel" name="reg-tel" placeholder="Телефон" maxlength="30">
+				</div>
+			</div>
+			<div class="form__btn-group">
+				<input class="special-style btn-reg" type="submit" name="reg-submit" value="Зарегистрироваться">
+				<a class="form__link" href="#">Есть аккаунт</a>
+			</div>
+		</form>
+		<ul class="social-list">
+			<li class="social-list__item"><a href="#" class="social-list__link"><i class="social-list__icon fab fa-vk"></i></a></li>
+			<li class="social-list__item"><a href="#" class="social-list__link"><i class="social-list__icon fab fa-google-plus-g"></i></a></li>
+			<li class="social-list__item"><a href="#" class="social-list__link"><i class="social-list__icon fab fa-facebook-f"></i></a></li>
+		</ul>
+	</div>
+</body>
+</html>

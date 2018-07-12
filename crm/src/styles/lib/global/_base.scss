@@ -1,0 +1,28 @@
+body {
+	background: #f2f6f9;
+	font:500 13px/14px "Gotham Pro";
+	color: #000;
+}
+input {
+	border: none;
+}
+input {
+	&[type=checkbox],
+	&[type=radio] {
+		display: none;
+	}
+}
+h2 {
+	font-size: 35px;
+	color: rgba(#000, .9);
+	line-height: 39px;
+	font-family: "Gotham Pro";
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+button {
+	border: none;
+}

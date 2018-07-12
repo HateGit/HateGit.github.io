@@ -1,0 +1,17 @@
+<svg id="ic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6c6c6c;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #6c6c6c;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path id="Shape" class="cls-1" d="M11.957,10.524l-1.031-1.8A5.541,5.541,0,0,1,10.2,5.976V4.4A4.309,4.309,0,0,0,6,0,4.309,4.309,0,0,0,1.8,4.4V5.976a5.541,5.541,0,0,1-.727,2.749l-1.031,1.8a.327.327,0,0,0,0,.316A.3.3,0,0,0,.3,11H11.7a.3.3,0,0,0,.262-.16A.327.327,0,0,0,11.957,10.524Z"/>
+  <path id="Combined_Shape" data-name="Combined Shape" class="cls-2" d="M4,0c0,1.158-.683,3-2,3S0,1.612,0,.454V0" transform="translate(4 10)"/>
+</svg>

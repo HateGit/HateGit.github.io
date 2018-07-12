@@ -1,0 +1,15 @@
+.bookk-tabel {
+  width: 654px;
+  color: #000000;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: normal !important;
+  tr { 
+    width: 651px;
+    height: 55px;
+    border-radius: 1px;
+    &:nth-child(2n+1) {
+      background-color: #f8f9f9;
+    }
+  }
+}

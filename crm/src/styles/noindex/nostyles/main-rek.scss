@@ -1,0 +1,67 @@
+.smp , .ura {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 27px;
+  & > span {
+    opacity: 0.5;
+    color: #000000;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-right: 23px;
+  }
+  label {
+    margin-right: 50px;
+    span {
+      margin-left: 25px;
+    }
+  }
+}
+
+.ura {
+  margin-top: 10px;
+  margin-right: 130px;
+}
+
+
+// скрываем radiobutton
+input[type="radio"] {
+  display: none;
+}
+
+// кастомизируем label
+.custradio {
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;  
+}
+
+
+// Для выбранного объекта
+input[type="radio"]:checked+label{
+  background-image: linear-gradient(to right, #1770f7 0%, #72a8ff 100%);
+  position: relative;
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  &::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #fff;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+
+

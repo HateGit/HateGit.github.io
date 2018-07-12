@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('/fonts/GothamPro-Medium.woff2') 
+    url('/fonts/GothamPro-Medium.woff') format('woff'),
+    url('/fonts/GothamPro-Medium.eot') format('embedded-opentype'),
+    url('/fonts/GothamPro-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Display';
+	src: 	url('/fonts/HelveticaNeueDeskInterface-Regular.woff2') format('woff2'),
+	    	url('/fonts/HelveticaNeueDeskInterface-Regular.woff') format('woff'),
+	    	url('/fonts/display.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat.woff2') format('woff2'),
+         url('/fonts/Montserrat.woff') format('woff'),
+         url('/fonts/Montserrat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

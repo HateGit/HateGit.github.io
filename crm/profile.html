@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>main</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+	<main class="main flex">
+		<!-- left-bar container -->
+		<aside class="sidebar"> 
+			<a class="logo" href="/">
+				<img src="<%= require('./src/img/logo.png') %>">
+			</a>
+			<ul class="sidebar-list">
+				<li class="sidebar-list__item active">
+						<a class="sidebar-list__link" href="#">
+							<img class="sidebar-list__icon-tenders" src="<%= require('./src/img/mace.png') %>" alt="tender">
+							Тендеры
+						</a>
+				</li>
+				<li class="sidebar-list__item">
+						<a class="sidebar-list__link" href="#">
+							<img class="sidebar-list__icon-contacts" src="<%= require('./src/img/contact.png') %>" alt="contacts">
+							Контакты
+						</a>
+				</li>
+				<li class="sidebar-list__item">
+						<a class="sidebar-list__link" href="#">
+							<img class="sidebar-list__icon-message" src="<%= require('./src/img/message.png') %>" alt="message">
+							Почта
+						</a>
+				</li>
+				<li class="sidebar-list__item">
+						<a class="sidebar-list__link" href="#">
+							<img class="sidebar-list__icon-analytics" src="<%= require('./src/img/statistic.png') %>" alt="analytics">
+							Аналитика
+						</a>
+				</li>
+			</ul>
+			<div class="sidebar-info">
+				<a href="#">
+					<img  src="<%= require('./src/img/info.png') %>" alt="info" title="info">
+				</a>
+			</div>
+		</aside> 
+		<!-- left bar container END -->
+		<div class="wrapper">
+			<header class="header flex">
+				<div class="btn-circle special-style">
+					<svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.831 9.832">
+  					<defs>
+    					<style>
+     						.cls-1 {
+     						  fill: none;
+     						  stroke: #fff;
+     						  stroke-linecap: round;
+     						  stroke-linejoin: round;
+     						  stroke-miterlimit: 10;
+     						  stroke-width: 2px;
+     						}
+    					</style>
+  					</defs>
+					  <g id="Group_2" data-name="Group 2" transform="translate(0.087 0.567)">
+					    <path id="Line" class="cls-1" d="M-.432.865H-8.264" transform="translate(3.988 0) rotate(-90)"/>
+					    <path id="Line-2" data-name="Line" class="cls-1" d="M-.432.865H-8.264" transform="translate(9.177 3.459)"/>
+					  </g>
+					</svg>
+				</div>
+				<div class="flex">
+					<a href="#" class="notice btn-circle btn-gray">
+						<svg class="bell" id="ic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13.5">
+						  <defs>
+						    <style>
+						      .cls-1 {
+						        fill: #6c6c6c;
+						      }
+						      .cls-2 {
+						        fill: none;
+						        stroke: #6c6c6c;
+						        stroke-miterlimit: 10;
+						      }
+						    </style>
+						  </defs>
+						  <path id="Shape" class="cls-1" d="M11.957,10.524l-1.031-1.8A5.541,5.541,0,0,1,10.2,5.976V4.4A4.309,4.309,0,0,0,6,0,4.309,4.309,0,0,0,1.8,4.4V5.976a5.541,5.541,0,0,1-.727,2.749l-1.031,1.8a.327.327,0,0,0,0,.316A.3.3,0,0,0,.3,11H11.7a.3.3,0,0,0,.262-.16A.327.327,0,0,0,11.957,10.524Z"/>
+						  <path id="Combined_Shape" data-name="Combined Shape" class="cls-2" d="M4,0c0,1.158-.683,3-2,3S0,1.612,0,.454V0" transform="translate(4 10)"/>
+						</svg>
+					</a>
+					<div class="user">
+						<img class="user__mini-img" src="<%= require('./src/img/main/mini-user-img.png') %>" alt="">
+						<span>Ирина Лебедева</span>
+					</div>
+					<a href="#" class="menu btn-circle btn-gray"></a>
+				</div>
+			</header>
+			<section class="my-profile">
+				<h2 class="title">Мой профиль</h2>
+				<div class="flex">
+					<div class="profile">
+					<div class="profile__user">
+						<img class="profile__user-img" src="<%= require('./src/img/main/user-img.png') %>" alt="">
+						<p class="profile__user-name">Ирина Лебедева</p>
+						<span class="profile__user-post">Учредитель</span>
+					</div>
+					<ul class="profile-sections">
+						<li class="profile-sections__item "><a class="profile-sections__link  active" href="#">Профиль</a></li>
+						<li class="profile-sections__item"><a class="profile-sections__link" href="#">Организация</a></li>
+						<li class="profile-sections__item"><a class="profile-sections__link" href="#">Документы</a></li>
+						<li class="profile-sections__item"><a class="profile-sections__link" href="#">Статистика</a></li>
+					</ul>
+					</div><!--PROFILE END -->
+					<div class="content">
+						<div class="content__tabs">
+							<div  class="content__tab active">
+								<a href="#" class="content__tab-link">Личные данные</a>
+							</div>
+						</div>
+						<form class="personal" action="" method="POST">
+							<div class="personal-box">
+								<div class="personal__input-wrap">
+									<input class="input-style" type="text" name="name" placeholder="ФИО">
+								</div>
+								<div class="flex personal__input-wrap">
+									<div class="personal-date__wrap">
+										<label class="personal-date__label" for="personal-mail">E-mail:</label>
+										<input class="personal-date__input" id="personal-mail" name="personal-mail" type="email" value="IrinaLebedeva@mail.mail">
+										<input id="mail-notice" type="checkbox" name="notice" value="mail-notice-on">
+										<label for="mail-notice" class="personal-date__checkbox input-checkbox">включить уведомления</label>
+									</div>
+									<div class="personal-date__wrap">
+										<label class="personal-date__label" for="personal-tel">Телефон:</label>
+										<input id="personal-tel" class="personal-date__input" type="tel" name="personal-tel" value="+7(563) 567-55-123">
+										<input id="tel-notice" class="checkbox" type="checkbox" name="notice" value="tel-notice-on" checked>
+										<label for="tel-notice" class="personal-date__checkbox input-checkbox">включить уведомления</label>
+									</div>
+								</div>
+								<div class="personal-post__box ">
+								<div class="personal-post__wrap flex-sb">
+									<input class="input-style col-3" type="text" placeholder="Должность" name="post">
+									<input id="post-leader" type="checkbox" name="post" value="leader" checked>
+									<label class="input-checkbox" for="post-leader" >Руководитель</label>
+									<input id="post-keyowner" type="checkbox" name="post" value="key-owner">
+									<label class="input-checkbox" for="post-keyowner">Владелец ключа</label>
+									<input id="post-chief-accountant" type="checkbox" name="post" value="chief-accountant">
+									<label class="input-checkbox" for="post-chief-accountant">Главный бухгалтер</label>
+								</div>
+								<div class="personal-post__wrap">
+									<input type="text" class="input-style col-12" placeholder="Полномочия: например, ...">
+								</div>
+								<div class="personal-post__wrap">
+									<input type="text" class="input-style col-12" placeholder="ИНН:">
+								</div>
+								</div>
+							</div>
+							<div class="passport-box">
+								<h4 class="passport-title">Паспортные данные</h4>
+								<div class="input-container">
+									<input class="input-style passport-serial" type="text"  name="passport-serial" placeholder="Серия">
+									<input class="input-style passport-number" type="text"  name="passport-number" placeholder="№">
+									<input class="passport-code input-style col-3" type="text" name="code" placeholder="Код подразделения">
+								</div>
+								<div class="input-container">
+									<input class="input-style col-8" type="text" name="issued-by" placeholder="Кем выдан">
+									<input class="input-style col-3" type="text" name="issued-when" placeholder="Когда выдан">
+								</div>
+								<div class="input-container">
+									<input class="input-style col-8" type="text" name="place-of-birth" placeholder="Место рождения">
+									<input class="input-style col-3" type="text" name="date-of-birth" placeholder="Дата рождения">
+								</div>
+								<div class="input-container">
+									<input class="input-style col-8" type="text" name="place-of-registration" placeholder="Место прописки">
+									<input class="input-style col-3" type="text" name="date-of-registration" placeholder="Дата прописки">
+								</div>
+							</div>
+							
+								<button class="btn-save special-style">Сохранить</button>
+								<button class="btn-cancel btn-gray">Отмена</button>
+				
+						</form>
+					</div>
+				</div><!--FLEX END -->
+			</section>
+		</div><!-- WRAPPER END -->
+	</main>
+</body>
+</html>
